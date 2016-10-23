@@ -1,0 +1,45 @@
+{
+  "name": "Abovo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "typings install",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "typings": "typings",
+    "start": "concurrently \"webpack --watch --progress --color\" \"npm run server\"",
+    "server": "live-server --port=4000 --mount=/:dist --wait=2000 --entry-file=index.html"
+  },
+  "keywords": [],
+  "author": "SzymonAK",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^3.1.0",
+    "css-loader": "^0.25.0",
+    "file-loader": "^0.9.0",
+    "html-loader": "^0.4.4",
+    "html-webpack-plugin": "^2.24.0",
+    "imports-loader": "^0.6.5",
+    "live-server": "^1.1.0",
+    "ng-annotate-loader": "^0.2.0",
+    "ngtemplate-loader": "^1.3.1",
+    "node-sass": "^3.10.1",
+    "resolve-url-loader": "^1.6.0",
+    "sass-loader": "^4.0.2",
+    "sass-resources-loader": "^1.1.0",
+    "style-loader": "^0.13.1",
+    "ts-loader": "^0.8.2",
+    "typescript": "^1.8.10",
+    "typings": "^1.4.0",
+    "webpack": "^1.13.2"
+  },
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-animate": "^1.5.8",
+    "angular-aria": "^1.5.8",
+    "angular-ui-router": "^1.0.0-beta.3",
+    "bootstrap-sass": "^3.3.7",
+    "jquery": "^3.1.1"
+  }
+}

@@ -1,0 +1,12 @@
+OauthExample.Web/node_modules/
+packages/
+OAuthExample.Api/bin/
+OAuthExample.Api/obj/
+*.user
+OauthExample.Web/bin/
+OauthExample.Web/dist/
+OAuthExample.Api.Tests/bin/
+OauthExample.Web/obj/
+OauthExample.Web/typings/
+.vs/
+OAuthExample.Api.Tests/obj/
