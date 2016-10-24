@@ -26,6 +26,7 @@ namespace OAuthExample.Api
         {
             ContainerBuilder builder = new ContainerBuilder();
             HttpConfiguration config = new HttpConfiguration();
+
             builder.RegisterApiControllers(Assembly.GetExecutingAssembly());
             builder.RegisterType<AuthRepository>().As<IAuthRepository>();
             builder.Register(c => new AuthContext("AuthContext")).As(typeof(AuthContext)).SingleInstance();
