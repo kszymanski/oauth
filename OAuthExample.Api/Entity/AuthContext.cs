@@ -9,10 +9,11 @@ namespace OAuthExample.Api.Entity
 {
     public class AuthContext : IdentityDbContext<User>
     {
-        public AuthContext() : base() { }
+        public AuthContext() : base("AuthContext") { }
         public AuthContext(string connectionString) : base(connectionString) {}
 
         public DbSet<Client> Clients { get; set; }
         public DbSet<RefreshToken> RefreshTokens { get; set; }
+        public DbSet<Order> Orders { get; set; }
     }
 }
