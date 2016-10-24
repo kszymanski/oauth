@@ -1,13 +1,12 @@
 require("./styles.scss");
 require("imports?jQuery=jquery!../../node_modules/bootstrap-sass/assets/javascripts/bootstrap.js");
-import * as angular from 'angular';
-import uirouter from 'angular-ui-router';
 
-import routing from './routing';
+import {app} from './app';
 import {DashboardComponent} from './components/dashboard/dashboard';
+import {OrderResource} from './services/orders.service';
 
-module abovo{
-    angular.module("name", [uirouter])
-        .config(routing);
-    angular.module("name").component('dashboard', new DashboardComponent());
+export module abovo{
+    
+    app.app.component('dashboard', new DashboardComponent());
+    app.app.factory('orders', ['$resource', 'apiUrl', ($resource, apiUrl) => OrderResource.Get($resource, apiUrl)]);
 }

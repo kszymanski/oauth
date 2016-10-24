@@ -1,7 +1,12 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
-
+var webpack = require('webpack');
+var definePlugin = new webpack.DefinePlugin({
+    'process.env': {
+        NODE_ENV: JSON.stringify(JSON.parse(`"${process.env.NODE_ENV}"` || '"development"'))
+    }
+});
 
 module.exports = {
     context: path.join(__dirname, "src"),
@@ -16,7 +21,7 @@ module.exports = {
     resolve: {
         extensions: ['', '.webpack.js', '.web.js', '.ts', '.js']
     },
-    plugins: [
+    plugins: [definePlugin,
    new HtmlWebpackPlugin({
        template: './index.html',
        minify: {
@@ -27,7 +32,7 @@ module.exports = {
            removeStyleLinkTypeAttributes: true
        }
    }),
-       new ExtractTextPlugin("styles.css")
+       new ExtractTextPlugin("styles.css")       
     ],
     module: {
         loaders: [
