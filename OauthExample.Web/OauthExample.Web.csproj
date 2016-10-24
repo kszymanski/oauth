@@ -8668,6 +8668,10 @@
     <Content Include="node_modules\zip-object\index.js" />
     <Content Include="node_modules\zip-object\test\index.js" />
     <Content Include="src\app\components\dashboard\dashboard.html" />
+    <TypeScriptCompile Include="src\app\app.ts" />
+    <TypeScriptCompile Include="src\app\config\development.ts" />
+    <TypeScriptCompile Include="src\app\config\index.ts" />
+    <TypeScriptCompile Include="src\app\config\production.ts" />
     <Content Include="src\index.html" />
     <Content Include="node_modules\.bin\acorn" />
     <Content Include="node_modules\.bin\acorn.cmd" />
@@ -12477,13 +12481,29 @@
     <Content Include="node_modules\zip-object\package.json" />
     <Content Include="node_modules\zip-object\README.md" />
     <None Include="src\app\styles.scss" />
+    <Content Include="karma.conf.js" />
     <Content Include="web.config" />
     <Content Include="webpack.config.js" />
+    <TypeScriptCompile Include="typings\globals\angular-mocks\index.d.ts" />
+    <TypeScriptCompile Include="typings\modules\chai\index.d.ts" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="package.json" />
     <Content Include="tsconfig.json" />
     <Content Include="typings.json" />
+    <Content Include="typings\globals\angular-animate\typings.json" />
+    <Content Include="typings\globals\angular\typings.json" />
+    <Content Include="typings\globals\core-js\typings.json" />
+    <Content Include="typings\globals\jasmine\typings.json" />
+    <Content Include="typings\globals\jquery\typings.json" />
+    <Content Include="typings\globals\node\typings.json" />
+    <Content Include="typings\globals\angular-resource\typings.json" />
+    <Content Include="typings\globals\assertion-error\typings.json" />
+    <Content Include="typings\globals\chai\typings.json" />
+    <Content Include="typings\globals\mocha\typings.json" />
+    <Content Include="typings\globals\sinon\typings.json" />
+    <Content Include="typings\modules\chai\typings.json" />
+    <Content Include="typings\globals\angular-mocks\typings.json" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
@@ -12894,6 +12914,20 @@
     <TypeScriptCompile Include="src\app\routing.ts" />
     <TypeScriptCompile Include="src\app\components\dashboard\dashboard.ts" />
     <TypeScriptCompile Include="src\app\main.ts" />
+    <TypeScriptCompile Include="src\app\services\orders.service.ts" />
+    <TypeScriptCompile Include="tests\test.ts" />
+    <TypeScriptCompile Include="typings\globals\angular-animate\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\angular-resource\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\angular\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\assertion-error\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\chai\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\core-js\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\jasmine\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\jquery\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\mocha\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\node\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\sinon\index.d.ts" />
+    <TypeScriptCompile Include="typings\index.d.ts" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="node_modules\node-sass\node_modules\sass-graph\node_modules\yargs\node_modules\read-pkg-up\node_modules\read-pkg\node_modules\normalize-package-data\node_modules\is-builtin-module\node_modules\" />
